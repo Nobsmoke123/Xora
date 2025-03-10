@@ -1,5 +1,11 @@
+import Header from "./components/Header/Header";
+
 const App = () => {
-  return <div className="text-5xl text-blue-300">HEllo WOrld</div>;
+  return (
+    <main className="overflow-hidden">
+      <Header />
+    </main>
+  );
 };
 
 export default App;
