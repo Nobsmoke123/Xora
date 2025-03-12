@@ -1,9 +1,10 @@
-import { JSX } from "react";
+// import { JSX } from "react";
 
 export interface ButtonProps {
   icon: string;
-  children: JSX.Element;
+  children?: React.ReactNode;
   classNames: string;
   href?: string;
   onClick: () => void;
+  markerFill: string;
 }

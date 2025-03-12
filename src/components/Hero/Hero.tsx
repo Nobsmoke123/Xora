@@ -20,7 +20,14 @@ const Hero = () => {
             learn, and surprisingly power.
           </p>
           <LinkScroll to="feature" offset={-100} spy smooth>
-            <Button icon="/images/zap.svg">Try it now</Button>
+            <Button
+              icon="/images/zap.svg"
+              classNames=""
+              markerFill=""
+              onClick={() => {}}
+            >
+              Try it now
+            </Button>
           </LinkScroll>
         </div>
       </Element>
