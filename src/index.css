@@ -38,13 +38,6 @@
   }
 }
 
-/* boxShadow: {
-  100: '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #1959AD',
-  200: '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 4px 10px #3391FF',
-  300: '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #1959AD',
-  400: 'inset 0px 2px 4px 0 rgba(255, 255, 255, 0.05)',
-  500: '0px 16px 24px rgba(0, 0, 0, 0.25), 0px -14px 48px rgba(40, 51, 111, 0.7)',
-}, */
 
 @theme {
   --font-poppins: poppins, sans-serif;
@@ -66,6 +59,29 @@
   --shadow-300: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #1959AD;
   --shadow-400: inset 0px 2px 4px 0 rgba(255, 255, 255, 0.05);
   --shadow-500: 0px 16px 24px rgba(0, 0, 0, 0.25), 0px -14px 48px rgba(40, 51, 111, 0.7);
+
+  --spacing-(1/5): 20%;
+	--spacing-(2/5): 40%;
+	--spacing-(3/5): 60%;
+	--spacing-(4/5): 80%;
+	--spacing-(3/20): 15%;
+	--spacing-(7/20): 35%;
+	--spacing-(9/20): 45%;
+	--spacing-(11/20): 55%;
+	--spacing-(13/20): 65%;
+	--spacing-(15/20): 75%;
+	--spacing-(17/20): 85%;
+	--spacing-(19/20): 95%;
+	--spacing-22: 88px;
+	--spacing-100: 100px;
+	--spacing-512: 512px;
+	--spacing-330: 330px;
+	--spacing-388: 388px;
+	--spacing-400: 400px;
+	--spacing-440: 440px;
+	--spacing-640: 640px;
+	--spacing-960: 960px;
+	--spacing-1230:1230px;
 }
 
 @utility h-num {
