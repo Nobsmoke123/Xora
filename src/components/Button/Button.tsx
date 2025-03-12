@@ -26,6 +26,7 @@ const Button: React.FC<ButtonProps> = ({
           {children}
         </span>
       </span>
+      <span className="glow-before glow-after"></span>
     </>
   );
 
