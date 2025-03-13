@@ -70,6 +70,13 @@
 	--spacing-640: 640px;
 	--spacing-960: 960px;
 	--spacing-1230:1230px;
+
+  
+  --radius-14: 14px;
+  --radius-20: 20px;
+  --radius-40: 40px;
+  --radius-half: 50%;
+  --radius-7xl: 40px;
 }
 
 @utility h-num {
