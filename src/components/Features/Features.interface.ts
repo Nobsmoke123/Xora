@@ -30,7 +30,7 @@ export const features: Array<Feature> = [
     text: "text 2",
     button: {
       icon: "/images/magictouch.svg",
-      title: "Watch the demo",
+      title: "Try it out",
     },
   },
 ];
