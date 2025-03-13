@@ -35,7 +35,13 @@ export const features: Array<Feature> = [
   },
 ];
 
-export const details = [
+export interface FeatureDetail {
+  id: string;
+  icon: string;
+  title: string;
+}
+
+export const details: Array<FeatureDetail> = [
   {
     id: "0",
     icon: "/images/detail-1.png",
