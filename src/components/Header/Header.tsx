@@ -1,12 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavLink from "../NavLink/NavLink";
 import { Link as LinkScroll } from "react-scroll";
+import { handleScroll } from "./Header.handlers";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", (() => handleScroll(setHasScrolled))());
+
+    // To remove the eventListeners when it's done.
+    return () => {
+      window.removeEventListener(
+        "scroll",
+        (() => handleScroll(setHasScrolled))()
+      );
+    };
+  }, [hasScrolled]);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full py-10">
+    <header
+      className={`fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 ${
+        hasScrolled ? "py-2 bg-black-100 backdrop-blur-[8px]" : ""
+      }`}
+    >
       <div className="container flex h-14 items-center max-lg:py-5">
         <a href="#" className="lg:hidden flex-1 cursor-pointer z-2">
           <img src="/images/xora.svg" alt="App Logo" height={55} width={115} />
@@ -29,7 +47,7 @@ const Header = () => {
                 <li className="nav-logo">
                   <LinkScroll
                     to="hero"
-                    offset={-100}
+                    offset={-250}
                     spy
                     smooth
                     className={`max-lg:hidden transition-transform duration-500 cursor-pointer`}
