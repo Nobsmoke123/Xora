@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import NavLink from "../NavLink/NavLink";
 import { Link as LinkScroll } from "react-scroll";
-import { handleScroll } from "./Header.handlers";
+import { handleScroll, toggleIsOpen } from "./Header.handlers";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,9 +39,15 @@ const Header = () => {
             <nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="nav-li">
-                  <NavLink title="features" />
+                  <NavLink
+                    title="features"
+                    onClick={(() => toggleIsOpen(setIsOpen))()}
+                  />
                   <div className="dot" />
-                  <NavLink title="pricing" />
+                  <NavLink
+                    title="pricing"
+                    onClick={(() => toggleIsOpen(setIsOpen))()}
+                  />
                 </li>
 
                 <li className="nav-logo">
@@ -62,9 +68,15 @@ const Header = () => {
                 </li>
 
                 <li className="nav-li">
-                  <NavLink title="faq" />
+                  <NavLink
+                    title="faq"
+                    onClick={(() => toggleIsOpen(setIsOpen))()}
+                  />
                   <div className="dot" />
-                  <NavLink title="download" />
+                  <NavLink
+                    title="download"
+                    onClick={(() => toggleIsOpen(setIsOpen))()}
+                  />
                 </li>
               </ul>
             </nav>

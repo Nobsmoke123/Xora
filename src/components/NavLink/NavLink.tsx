@@ -1,12 +1,12 @@
 import { Link as LinkScroll } from "react-scroll";
 import { NavLinkProps } from "./NavLink.interface";
 
-const NavLink = ({ title }: NavLinkProps) => {
+const NavLink = ({ title, onClick }: NavLinkProps) => {
   return (
     <LinkScroll
       to={title}
       offset={-100}
-      onClick={() => {}}
+      onClick={onClick}
       spy
       smooth
       activeClass="!nav-active"
