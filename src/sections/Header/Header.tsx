@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import NavLink from "../NavLink/NavLink";
+import NavLink from "../../components/NavLink/NavLink";
 import { Link as LinkScroll } from "react-scroll";
 import { handleScroll, toggleIsOpen } from "./Header.handlers";
 

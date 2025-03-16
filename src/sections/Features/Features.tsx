@@ -5,7 +5,7 @@ import {
   FeatureDetail,
   features,
 } from "./Features.interface";
-import Button from "../Button/Button";
+import Button from "../../components/Button/Button";
 
 const Features = () => {
   return (

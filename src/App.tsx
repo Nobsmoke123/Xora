@@ -1,7 +1,8 @@
-import Features from "./components/Features/Features";
-import Header from "./components/Header/Header";
+import Faq from "./sections/Faq/Faq";
+import Features from "./sections/Features/Features";
+import Header from "./sections/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Pricing from "./components/Pricing/Pricing";
+import Pricing from "./sections/Pricing/Pricing";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Hero />
       <Features />
       <Pricing />
+      <Faq />
     </main>
   );
 };

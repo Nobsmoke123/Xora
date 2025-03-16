@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Element } from "react-scroll";
 import { Plan, plans } from "./Pricing.interface";
 import CountUp from "react-countup";
-import Button from "../Button/Button";
+import Button from "../../components/Button/Button";
 
 const Pricing = () => {
   const [monthly, setMonthly] = useState(false);
