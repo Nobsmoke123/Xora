@@ -314,7 +314,7 @@
 }
 
 @utility download_tech-icon_before {
-  @apply before:absolute before:inset-1.5 before:rounded-md before:bg-s2 before:content-[''] hover:border-s4;
+  @apply before:absolute before:inset-1.5 before:rounded-full before:bg-s2 before:content-[''] hover:border-s4;
 }
 
 @utility download_tech-link {

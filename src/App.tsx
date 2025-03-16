@@ -4,6 +4,7 @@ import Header from "./sections/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Pricing from "./sections/Pricing/Pricing";
 import Testimonial from "./sections/Testimonial/Testimonial";
+import Download from "./sections/Download/Download";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Pricing />
       <Faq />
       <Testimonial />
+      <Download />
     </main>
   );
 };
