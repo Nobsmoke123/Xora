@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Element } from "react-scroll";
+import { Plan, plans } from "./Pricing.interface";
 
 const Pricing = () => {
   const [monthly, setMonthly] = useState(false);
@@ -48,6 +49,17 @@ const Pricing = () => {
                 className="absolute inset-0 opacity-5 mix-blend-soft-light"
               />
             </div>
+          </div>
+          {/* Pricing section */}
+          <div className="scroll-hide relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6">
+            {plans.map((plan: Plan, index: number) => (
+              <div
+                key={index}
+                className="pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even"
+              >
+                {plan.title}
+              </div>
+            ))}
           </div>
         </div>
       </Element>
