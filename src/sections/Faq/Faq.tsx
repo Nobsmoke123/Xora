@@ -27,10 +27,22 @@ const Faq = () => {
               {faq
                 .slice(0, Math.floor(faq.length / 2))
                 .map((item, index: number) => (
-                  <FaqItem key={index} item={item} index={index}/>
+                  <FaqItem key={index} item={item} index={index} />
+                ))}
+            </div>
+            <div className="relative flex-1 pt-24">
+              {faq
+                .slice(Math.floor(faq.length / 2))
+                .map((item, index: number) => (
+                  <FaqItem
+                    key={index}
+                    item={item}
+                    index={Math.floor(faq.length / 2) + index}
+                  />
                 ))}
             </div>
           </div>
+          <div className="faq-line_after absolute left-[calc(50%-1px)] top-0 -z-1 h-full w-0.5 bg-s2 max-lg:hidden"></div>
         </div>
       </Element>
     </section>
