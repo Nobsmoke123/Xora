@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Pricing from "./sections/Pricing/Pricing";
 import Testimonial from "./sections/Testimonial/Testimonial";
 import Download from "./sections/Download/Download";
+import Footer from "./sections/Footer/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Faq />
       <Testimonial />
       <Download />
+      <Footer />
     </main>
   );
 };
